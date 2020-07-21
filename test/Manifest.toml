@@ -102,6 +102,10 @@ version = "0.17.19"
 deps = ["Printf"]
 uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
 
+[[DelimitedFiles]]
+deps = ["Mmap"]
+uuid = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+
 [[DiffResults]]
 deps = ["StaticArrays"]
 git-tree-sha1 = "da24935df8e0c6cf28de340b958f6aac88eaa0cc"
@@ -260,6 +264,12 @@ uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 [[REPL]]
 deps = ["InteractiveUtils", "Markdown", "Sockets"]
 uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+
+[[REoptLite]]
+deps = ["Dates", "DelimitedFiles", "HTTP", "JSON", "JuMP", "Logging", "MathOptInterface", "MutableArithmetics"]
+git-tree-sha1 = "abbc5a98b2e5fe88cd869b82307daf5966e29e3d"
+uuid = "0144022d-7626-48b7-867b-06d945449d75"
+version = "0.1.1"
 
 [[Random]]
 deps = ["Serialization"]
