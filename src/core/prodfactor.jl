@@ -41,7 +41,7 @@ function prodfactor(pv::PV, latitude::Real, longitude::Real; timeframe="hourly")
 
     try
         @info "Querying PVWatts for prodfactor with " pv.name
-        r = HTTP.get(url, require_ssl_verification=false)  # cannot verify on NREL VPN
+        r = HTTP.get(url)  # cannot verify on NREL VPN
         response = JSON.parse(String(r.body))
         if r.status != 200
             error("Bad response from PVWatts: $(response["errors"])")
