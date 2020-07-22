@@ -27,8 +27,6 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 # *********************************************************************************
-using Logging
-
 function prodfactor(pv::PV, latitude::Real, longitude::Real; timeframe="hourly")
 
     url = string("https://developer.nrel.gov/api/pvwatts/v6.json", "?api_key=", nrel_developer_key,
@@ -41,10 +39,8 @@ function prodfactor(pv::PV, latitude::Real, longitude::Real; timeframe="hourly")
 
     try
         @info "Querying PVWatts for prodfactor with " pv.name
-        r = HTTP.get(url)  # cannot verify on NREL VPN
-        response = JSON.parse(String(r.body))
+        r = HTTP.get(url)
         if r.status != 200
-            error("Bad response from PVWatts: $(response["errors"])")
             # julia does not get here even with status != 200 b/c it jumps ahead to CIDER/reopt/src/core/reopt_inputs.jl:114
             # and raises ArgumentError: indexed assignment with a single value to many locations is not supported; perhaps use broadcasting `.=` instead?
         end
