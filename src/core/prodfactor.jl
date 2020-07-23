@@ -40,7 +40,9 @@ function prodfactor(pv::PV, latitude::Real, longitude::Real; timeframe="hourly")
     try
         @info "Querying PVWatts for prodfactor with " pv.name
         r = HTTP.get(url)
+        response = JSON.parse(String(r.body))
         if r.status != 200
+            error("Bad response from PVWatts: $(response["errors"])")
             # julia does not get here even with status != 200 b/c it jumps ahead to CIDER/reopt/src/core/reopt_inputs.jl:114
             # and raises ArgumentError: indexed assignment with a single value to many locations is not supported; perhaps use broadcasting `.=` instead?
         end
