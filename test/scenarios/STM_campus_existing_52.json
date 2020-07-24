@@ -8,7 +8,7 @@
         "outage_durations": [24]
     },
     "Generator": {
-        "existing_kw": 0.0,
+        "max_kw": 0.0,
         "min_turn_down_pct": 0.0,
         "only_runs_during_grid_outage": true,
         "sells_energy_back_to_grid": false
