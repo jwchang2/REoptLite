@@ -274,14 +274,14 @@ function run_reopt(m::JuMP.AbstractModel, p::REoptInputs; obj::Int=2)
 	catch
 		return Dict(
 			"status" => status,
-			"inputs" => p,
+			#"inputs" => p,
 			"lcc" => lcc
 		)
 	end
 
 	results = reopt_results(m, p)
 	results["status"] = status
-	results["inputs"] = p
+	#results["inputs"] = p
 	results["lcc"] = lcc
 	return results
 end
