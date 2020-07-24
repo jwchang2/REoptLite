@@ -1,0 +1,27 @@
+(create Julia environment)
+cd test
+julia --project = '..'
+
+(in Julia)
+cd("..")
+include("./src/REoptLite.jl")
+cd("test")
+
+(activate test environment)
+]
+activate .
+
+(run JuMP Model)
+using Test
+using JuMP
+using Xpress
+using JSON
+using Main.REoptLite
+
+m = Model(optimizer_with_attributes(Xpress.Optimizer, "OUTPUTLOG" => 0))
+results = results = run_reopt(m, "./scenarios/FILE_NAME.json")    #substitute FILE_NAME with applicable scenario json
+
+(obtain results dictionary json)
+open("FILE_NAME_results.json","w") do f    #substitute FILE_NAME with applicable scenario json
+    JSON.print(f, results)
+    end
