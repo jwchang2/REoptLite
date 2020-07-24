@@ -492,4 +492,6 @@ end
 function add_outage_results(m, p, r::Dict)
 	r["expected_outage_cost"] = value(m[:ExpectedOutageCost])
 	r["total_unserved_load"] = sum(value.(m[:dvUnservedLoad]))
+	r["total_microgrid_costs"] = value.(m[:ExpectedOutageCost]) + value.(m[:mgTotalTechUpgradeCost]) + value.(m[:dvMGStorageUpgradeCost]) + value.(m[:ExpectedMGFuelCost])
+	r["max_outage_cost"] = value.(m[:dvMaxOutageCost])
 end
