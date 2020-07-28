@@ -496,5 +496,5 @@ function add_outage_results(m, p, r::Dict)
 	r["microgrid_upgrade_costs"] = value.(m[:mgTotalTechUpgradeCost]) + value.(m[:dvMGStorageUpgradeCost]) + value.(m[:ExpectedMGFuelCost])
 	r["max_outage_cost"] = value.(m[:dvMaxOutageCost])
 	r["MG_storage_used?"] = value.(m[:binMGStorageUsed])
-	r["MG_PV_and_batt_used?"] = value.(m[:binMGTechUsed])
+	r["MG_PV_and_Gen_used?"] = value.(m[:binMGTechUsed])
 end

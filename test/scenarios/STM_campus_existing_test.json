@@ -4,8 +4,8 @@
         "latitude": 39.7407
     },
     "ElectricUtility": {
-        "outage_start_timesteps": [0, 730, 1460, 2190, 2920, 3650, 4380, 5110, 5840, 6570, 7300, 8030],
-        "outage_durations": [2]
+        "outage_start_timesteps": [5100, 5200, 5300],
+        "outage_durations": [12]
     },
     "Generator": {
         "existing_kw": 0.0,
