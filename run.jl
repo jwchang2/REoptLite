@@ -2,6 +2,7 @@ include("./src/REoptLite.jl")
 using JuMP
 using Xpress
 using Main.REoptLite
+using JSON
 
 
 function run()

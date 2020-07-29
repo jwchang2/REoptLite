@@ -17402,18 +17402,21 @@
   },
   "PV": {
     "array_type": 0,
-    "existing_kw": 16
+    "existing_kw": 16,
+    "max_kw": 1000
   },
   "Storage": {
     "macrs_option_years": 5,
     "can_grid_charge": false,
-    "total_itc_pct": 0.26
+    "total_itc_pct": 0.26,
+    "max_kw": 1000,
+    "max_kwh": 2000
   },
   "Financial": {
     "owner_discount_pct": 0.1,
     "offtaker_discount_pct": 0.03,
     "two_party_ownership": true,
     "offtaker_tax_pct": 0.0,
-    "VoLL": 100.0
+    "VoLL": 10000.0
   }
 }
