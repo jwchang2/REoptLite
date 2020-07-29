@@ -162,9 +162,9 @@ end
 
 
 function add_MG_storage_dispatch_constraints(m,p)
-    # initial SOC at start of each outage equals the grid-optimal SOC
+    # initial SOC at start of each outage equals 70% of storage capacity
     @constraint(m, [s in p.elecutil.scenarios, tz in p.elecutil.outage_start_timesteps],
-        m[:dvMGStoredEnergy][s, tz, 0] <= m[:dvStoredEnergy][:elec, tz]
+        m[:dvMGStoredEnergy][s, tz, 0] <= m[:dvStorageEnergy][:elec] * 0.7
     )
     
     # state of charge
