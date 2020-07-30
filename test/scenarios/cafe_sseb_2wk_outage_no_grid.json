@@ -80,7 +80,7 @@
     },
     "PV": {
       "array_type": 0,
-      "existing_kw": 0,
+      "existing_kw": 16,
       "max_kw": 15000
     },
     "Storage": {
