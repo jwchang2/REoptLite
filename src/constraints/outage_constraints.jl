@@ -80,14 +80,12 @@ function add_MG_size_constraints(m,p)
     )
     @info "p.mg_tech_sizes_equal_grid_sizes", p.mg_tech_sizes_equal_grid_sizes
     if p.mg_tech_sizes_equal_grid_sizes
-        @info "here"
         @constraint(m, [t in p.techs],
             m[:dvMGsize][t] == m[:dvSize][t]
         )
     else
-        @info "there"
         @constraint(m, [t in p.techs],
-            m[:dvMGsize][t] <= m[:dvSize][t]
+            m[:dvMGsize][t] <= 16.1 # constrain MG PV size to SSEB existing
         )
     end
         
