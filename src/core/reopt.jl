@@ -504,16 +504,17 @@ function add_outage_results(m, p, r::Dict)
 	r["MG_storage_used?"] = value.(m[:binMGStorageUsed])
 	r["MG_PV_and_Gen_used?"] = value.(m[:binMGTechUsed])
 
-	#if !isempty(p.elecutil.outage_start_timesteps)
-		#for tz in p.elecutil.outage_start_timesteps
-			#outage_duration_load = Any[]
-			#push!(outage_duration_load, p.elec_load.critical_loads_kw[tz:tz+(maximum(p.elecutil.outage_durations)-1)])
-		#end
+	outage_duration_load = Any[]
+
+	if !isempty(p.elecutil.outage_start_timesteps)
+		for tz in p.elecutil.outage_start_timesteps
+			push!(outage_duration_load, p.elec_load.critical_loads_kw[tz:tz+(maximum(p.elecutil.outage_durations)-1)])
+		end
 		
-		#for loads in outage_duration_load
-			#r["max_unserved_load"] = maximum(sum(loads))
-		#end
-	#end
+		for loads in outage_duration_load
+			r["max_unserved_load"] = maximum(sum(loads))
+		end
+	end
 	
 	if !isempty(p.pvtechs)
 		for t in p.pvtechs
