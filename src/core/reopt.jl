@@ -497,23 +497,22 @@ end
 
 function add_outage_results(m, p, r::Dict)
 	r["expected_outage_cost"] = value(m[:ExpectedOutageCost])
-	#r["max_unserved_load"] = maximum(sum(value.(m[:dvUnservedLoad])))
-	# r["unserved_load"] = value.(m[:dvUnservedLoad][1,:,maximum(p.elecutil.outage_durations)])
 	r["microgrid_upgrade_costs"] = value.(m[:mgTotalTechUpgradeCost]) + value.(m[:dvMGStorageUpgradeCost]) + value.(m[:ExpectedMGFuelCost])
 	r["max_outage_cost"] = value.(m[:dvMaxOutageCost])
 	r["MG_storage_used?"] = value.(m[:binMGStorageUsed])
 	r["MG_PV_and_Gen_used?"] = value.(m[:binMGTechUsed])
 
 	outage_duration_load = Any[]
+	r["unserved_load_remaining"] = zeros(Float64,length(p.elecutil.outage_start_timesteps))
 
 	if !isempty(p.elecutil.outage_start_timesteps)
-		for tz in p.elecutil.outage_start_timesteps
+		for (i,tz) in enumerate(p.elecutil.outage_start_timesteps)
 			push!(outage_duration_load, p.elec_load.critical_loads_kw[tz:tz+(maximum(p.elecutil.outage_durations)-1)])
+			r["unserved_load_remaining"][i] = sum(value.(m[:dvUnservedLoad][1,tz,:]))
 		end
 		
-		for loads in outage_duration_load
-			r["max_unserved_load"] = maximum(sum(loads))
-		end
+		r["maximum_unserved_load_remaining"] = maximum(r["unserved_load_remaining"])
+		r["max_possible_unserved_load"] = maximum((sum(loads) for loads in outage_duration_load))
 	end
 	
 	if !isempty(p.pvtechs)
