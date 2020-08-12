@@ -85,7 +85,7 @@ function add_MG_size_constraints(m,p)
         )
     else
         @constraint(m, [t in p.techs],
-            m[:dvMGsize][t] <= 16.1 # constrain MG PV size to SSEB existing
+            m[:dvMGsize][t] <= m[:dvSize][t]
         )
     end
         
