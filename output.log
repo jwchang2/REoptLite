@@ -70445,3 +70445,2268 @@ Number of integer feasible solutions found is 1
 Best integer solution found is  63478474.75
 Best bound is  63478474.75
 Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       668854 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     86840 rows        51517 cols       276141 elements         2 globals
+     30388 inds
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   6s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  31446649.   .0000000 |  p  3.075E+08   .0000000 |  B  3.313E+12 -8.043E+12
+ D  38544337.   .0000000 |  p  2.834E+08   .0000000 |  B  4.357E+08 -1.216E+09
+ D  40746171.   .0000000 |  p  2.834E+08   .0000000 |  B  64868090.  30243298.
+ D  45349152.   .0000000 |  p  2.073E+08   .0000000 |  B  56775511.  48074914.
+ D  47821224.   .0000000 |  p  2.059E+08   .0000000 |  B  55925313.  54031208.
+ D  49086861.   .0000000 |  p  2.024E+08   .0000000 |  B  55797635.  55187264.
+ D  50559318.   .0000000 |  p  1.988E+08   .0000000 |  B  55740131.  55738910.
+ D  50877040.   .0000000 |  p  1.905E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 25663 simplex iterations, 8.03s
+    Primal: 10070 simplex iterations, 10.12s
+   Barrier: 70 barrier and 40 simplex iterations, 10.12s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    40       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  70 barrier and 40 simplex iterations in 13s
+
+Final objective                         : 5.573977175087491e+07
+  Max primal violation      (abs / rel) : 9.948e-13 / 9.430e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         55947290.36  55739771.75      1                  0.37%       0     17
+   1  M   55947290.36  55739771.75      1   1545      0    0.37%       2     19
+   2  K   55947290.36  55739771.75      1   2478   1543    0.37%       2     20
+   3  K   55947290.36  55739771.75      1      1      7    0.37%       2     22
+   4  K   55947290.36  55739771.75      1      1    932    0.37%       2     23
+   5  K   55947290.36  55739771.75      1      0      1    0.37%       2     24
+c         55739771.75  55739771.75      2                  0.00%       0     25
+ *** Search completed ***     Time:    25 Nodes:          1
+Number of integer feasible solutions found is 2
+Best integer solution found is  55739771.75
+Best bound is  55739771.75
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.076E+08   .0000000 |  B  4.403E+12 -9.173E+12
+ D  38815557.   .0000000 |  p  3.076E+08   .0000000 |  B  2.203E+09 -1.313E+10
+ D  44233306.   .0000000 |  p  2.890E+08   .0000000 |  B  88852094.  1034248.5
+ D  46600868.   .0000000 |  p  2.890E+08   .0000000 |  B  60133973.  38913049.
+ D  48960210.   .0000000 |  p  2.890E+08   .0000000 |  B  56393200.  51008858.
+ D  50607227.   .0000000 |  p  2.834E+08   .0000000 |  B  55886414.  54685808.
+ D  51656278.   .0000000 |  p  2.499E+08   .0000000 |  B  55740323.  55737315.
+ D  52142061.   .0000000 |  p  2.307E+08   .0000000 |  B  55739772.  55739771.
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38379 simplex iterations, 9.26s
+    Primal: 8755 simplex iterations, 9.34s
+   Barrier: 67 barrier and 39 simplex iterations, 10.10s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  67 barrier and 39 simplex iterations in 13s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56291628.55  55739771.75      1                  0.98%       0     14
+   1  M   56291628.55  55739829.05      1   4123      0    0.98%       2     15
+   2  K   56291628.55  55743069.47      1   2579     13    0.97%       2     18
+   3  K   56291628.55  55744060.46      1   1552     10    0.97%       2     20
+   4  K   56291628.55  55744607.01      1    936     12    0.97%       2     22
+   5  K   56291628.55  55744795.43      1    561      0    0.97%       2     24
+   6  K   56291628.55  55744805.86      1    337      1    0.97%       2     26
+   7  K   56291628.55  55744805.86      1    203      0    0.97%       2     28
+   8  K   56291628.55  55744805.86      1    121      0    0.97%       2     30
+   9  K   56291628.55  55744805.86      1     73      0    0.97%       2     32
+  10  K   56291628.55  55744805.86      1     49      0    0.97%       2     34
+  11  K   56291628.55  55744805.86      1     49      0    0.97%       2     37
+  12  K   56291628.55  55744805.86      1     14      0    0.97%       2     39
+  13  K   56291628.55  55744805.86      1      0      0    0.97%       2     41
+  14  G   56291628.55  55744805.86      1      0      0    0.97%       2     41
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 21124
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56291628.55  55744805.86      1      2      1    0.97%       2     52
+*      1  56106530.56  55774564.22      2      1      2    0.59%       0     53
+       2  56106530.56  55774564.22      2      1      2    0.59%       1     53
+E      2  55989907.48  55774564.22      3      1      2    0.38%       0     55
+       3  55989907.48  55947765.71      3      2      2    0.08%       1     56
+       4  55989907.48  55947765.71      3      1      3    0.08%       1     56
+       5  55989907.48  55989851.74      3      0      3    0.00%       1     57
+ *** Search completed ***     Time:    57 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55989907.48
+Best bound is  55989907.48
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.110E+08   .0000000 |  B  4.763E+12 -9.177E+12
+ D  38815557.   .0000000 |  p  3.110E+08   .0000000 |  B  3.836E+09 -1.273E+10
+ D  44233306.   .0000000 |  p  3.110E+08   .0000000 |  B  72812275.  22342237.
+ D  46600868.   .0000000 |  p  2.894E+08   .0000000 |  B  61058496.  38896396.
+ D  48960210.   .0000000 |  p  2.894E+08   .0000000 |  B  56374172.  50995887.
+ D  50607227.   .0000000 |  p  2.894E+08   .0000000 |  B  55911270.  54393327.
+ D  51656278.   .0000000 |  p  2.837E+08   .0000000 |  B  55746215.  55652939.
+ D  52142061.   .0000000 |  p  2.834E+08   .0000000 |  B  55739851.  55739062.
+ D  52504153.   .0000000 |  p  2.502E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38379 simplex iterations, 8.73s
+    Primal: 23921 simplex iterations, 10.91s
+   Barrier: 75 barrier and 39 simplex iterations, 10.91s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    14
+Barrier solved problem
+  75 barrier and 39 simplex iterations in 14s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56630106.69  55739771.75      1                  1.57%       0     15
+   1  M   56630106.69  55739885.80      1   4122      0    1.57%       2     17
+   2  K   56630106.69  55746335.55      1   2580     13    1.56%       2     19
+   3  K   56630106.69  55748313.26      1   1555     17    1.56%       2     21
+   4  K   56630106.69  55749395.88      1    935      6    1.56%       2     23
+   5  K   56630106.69  55749770.91      1    562      3    1.55%       2     25
+   6  K   56630106.69  55749791.66      1    337      0    1.55%       2     27
+   7  K   56630106.69  55749791.66      1    203      0    1.55%       2     30
+   8  K   56630106.69  55749791.66      1    121      0    1.55%       2     32
+   9  K   56630106.69  55749791.66      1     73      0    1.55%       2     34
+  10  K   56630106.69  55749791.66      1     49      0    1.55%       2     36
+  11  K   56630106.69  55749791.66      1     49      0    1.55%       2     38
+  12  K   56630106.69  55749791.66      1     14      0    1.55%       2     40
+  13  K   56630106.69  55749791.66      1      0      0    1.55%       2     42
+  14  G   56630106.69  55749791.66      1      0      0    1.55%       2     43
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 21124
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56630106.69  55749791.66      1      2      1    1.55%       2     54
+*      1  56473289.37  55774588.73      2      1      2    1.24%       0     57
+       2  56473289.37  55774588.73      2      1      2    1.24%       1     57
+E      2  55990060.45  55774588.73      3      1      2    0.38%       0     58
+       3  55990060.45  55947734.75      3      2      2    0.08%       1     59
+       4  55990060.45  55947734.75      3      1      3    0.08%       1     60
+       5  55990060.45  55990004.71      3      0      3    0.00%       1     61
+ *** Search completed ***     Time:    61 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.114E+08   .0000000 |  B  5.688E+12 -9.206E+12
+ D  38815557.   .0000000 |  p  3.114E+08   .0000000 |  B  4.822E+09 -4.804E+10
+ D  44233306.   .0000000 |  p  3.113E+08   .0000000 |  B  1.486E+08 -2.396E+08
+ D  46600868.   .0000000 |  p  2.898E+08   .0000000 |  B  64463297.  27441769.
+ D  48960210.   .0000000 |  p  2.898E+08   .0000000 |  B  56893584.  48066769.
+ D  50607227.   .0000000 |  p  2.711E+08   .0000000 |  B  55939871.  54079407.
+ D  51656278.   .0000000 |  p  2.711E+08   .0000000 |  B  55750436.  55659331.
+ D  52142061.   .0000000 |  p  2.710E+08   .0000000 |  B  55739872.  55738988.
+ D  52504153.   .0000000 |  p  2.709E+08   .0000000 |  B  55739772.  55739772.
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38344 simplex iterations, 8.45s
+    Primal: 26134 simplex iterations, 10.54s
+   Barrier: 78 barrier and 40 simplex iterations, 10.64s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    40       55739771.75      P      0     0        .000000    14
+Barrier solved problem
+  78 barrier and 40 simplex iterations in 14s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56962236.98  55739771.75      1                  2.15%       0     15
+   1  M   56962236.98  55739942.02      1   4124      0    2.15%       2     17
+   2  K   56962236.98  55749571.31      1   2579     13    2.13%       2     19
+   3  K   56962236.98  55752488.76      1   1552     12    2.12%       2     21
+   4  K   56962236.98  55754140.30      1    934      6    2.12%       2     24
+   5  K   56962236.98  55754700.22      1    562      4    2.12%       2     26
+   6  K   56962236.98  55754731.20      1    337      0    2.12%       2     28
+   7  K   56962236.98  55754731.20      1    202      0    2.12%       2     30
+   8  K   56962236.98  55754731.20      1    121      0    2.12%       2     32
+   9  K   56962236.98  55754731.20      1     73      0    2.12%       2     34
+  10  K   56962236.98  55754731.20      1     49      0    2.12%       2     36
+  11  K   56962236.98  55754731.20      1     49      0    2.12%       2     38
+  12  K   56962236.98  55754731.20      1     14      0    2.12%       2     41
+  13  K   56962236.98  55754731.20      1      0      0    2.12%       2     43
+  14  G   56962236.98  55754731.20      1      0      0    2.12%       2     43
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 21124
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56962236.98  55754731.20      1      2      1    2.12%       2     56
+*      1  56840048.17  55774587.44      2      1      2    1.87%       0     58
+       2  56840048.17  55774587.44      2      1      2    1.87%       1     58
+E      2  55990060.45  55774587.44      3      1      2    0.38%       0     59
+       3  55990060.45  55947734.75      3      2      2    0.08%       1     60
+       4  55990060.45  55947734.75      3      1      3    0.08%       1     61
+       5  55990060.45  55990004.71      3      0      3    0.00%       1     61
+ *** Search completed ***     Time:    61 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   4s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.110E+08   .0000000 |  B  5.207E+12 -9.181E+12
+ D  38815557.   .0000000 |  p  3.117E+08   .0000000 |  B  4.325E+09 -2.081E+10
+ D  44233306.   .0000000 |  p  2.901E+08   .0000000 |  B  88737241. -36296875.
+ D  46600868.   .0000000 |  p  2.901E+08   .0000000 |  B  60775727.  23899570.
+ D  48960210.   .0000000 |  p  2.901E+08   .0000000 |  B  56752659.  44479058.
+ D  50607227.   .0000000 |  p  2.761E+08   .0000000 |  B  55900549.  53864283.
+ D  51656278.   .0000000 |  p  2.761E+08   .0000000 |  B  55754429.  55658967.
+ D  52142061.   .0000000 |  p  2.760E+08   .0000000 |  B  55739798.  55739609.
+ D  52504153.   .0000000 |  p  2.759E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38379 simplex iterations, 8.49s
+    Primal: 24633 simplex iterations, 9.94s
+   Barrier: 71 barrier and 39 simplex iterations, 9.94s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    12
+Barrier solved problem
+  71 barrier and 39 simplex iterations in 12s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         57272279.00  55739771.75      1                  2.68%       0     15
+   1  M   57272279.00  55739997.79      1   4124      0    2.68%       2     16
+   2  K   57272279.00  55752780.93      1   2579     13    2.65%       2     18
+   3  K   57272279.00  55756653.92      1   1552     12    2.65%       2     20
+   4  K   57272279.00  55758846.39      1    934      6    2.64%       2     22
+   5  K   57272279.00  55759589.69      1    561      1    2.64%       2     25
+   6  K   57272279.00  55759630.82      1    337      2    2.64%       2     27
+   7  K   57272279.00  55759630.82      1    202      0    2.64%       2     29
+   8  K   57272279.00  55759630.82      1    121      0    2.64%       2     31
+   9  K   57272279.00  55759630.82      1     73      0    2.64%       2     33
+  10  K   57272279.00  55759630.82      1     49      0    2.64%       2     35
+  11  K   57272279.00  55759630.82      1     49      0    2.64%       2     37
+  12  K   57272279.00  55759630.82      1     14      0    2.64%       2     39
+  13  K   57272279.00  55759630.82      1      0      0    2.64%       2     42
+  14  G   57272279.00  55759630.82      1      0      0    2.64%       2     42
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 21124
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  57272279.00  55759630.82      1      2      1    2.64%       2     60
+*      1  57206806.98  55774614.98      2      1      2    2.50%       0     62
+       2  57206806.98  55774614.98      2      1      2    2.50%       1     62
+E      2  55990060.45  55774614.98      3      1      2    0.38%       0     64
+       3  55990060.45  55947734.75      3      2      2    0.08%       1     67
+       4  55990060.45  55947734.75      3      1      3    0.08%       1     68
+       5  55990060.45  55990004.71      3      0      3    0.00%       1     69
+ *** Search completed ***     Time:    69 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.113E+08   .0000000 |  B  6.246E+12 -9.255E+12
+ D  38815557.   .0000000 |  p  3.121E+08   .0000000 |  B  1.422E+10 -8.234E+10
+ D  44233306.   .0000000 |  p  3.120E+08   .0000000 |  B  1.153E+08 -98609306.
+ D  46600868.   .0000000 |  p  3.120E+08   .0000000 |  B  62083989.  28132920.
+ D  48960210.   .0000000 |  p  3.120E+08   .0000000 |  B  56733527.  46828983.
+ D  50607227.   .0000000 |  p  3.120E+08   .0000000 |  B  55918980.  53703184.
+ D  51656278.   .0000000 |  p  3.120E+08   .0000000 |  B  55747685.  55665849.
+ D  52142061.   .0000000 |  p  3.120E+08   .0000000 |  B  55739854.  55739370.
+ D  52504153.   .0000000 |  p  3.119E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38778 simplex iterations, 9.86s
+    Primal: 11279 simplex iterations, 10.22s
+   Barrier: 73 barrier and 39 simplex iterations, 11.32s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    14
+Barrier solved problem
+  73 barrier and 39 simplex iterations in 14s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         57569638.35  55739771.75      1                  3.18%       0     17
+   1  M   57569638.35  55740053.12      1   4123      0    3.18%       2     19
+   2  K   57569638.35  55755965.59      1   2579     13    3.15%       2     22
+   3  K   57569638.35  55947293.33      1   1553     14    2.82%       2     24
+   4  K   57569638.35  55947293.33      1   1553   1552    2.82%       1     24
+   5  M   57569638.35  55947293.33      1   2584   4131    2.82%       1     24
+   6  K   57569638.35  55947293.33      1   1557     16    2.82%       1     26
+   7  K   57569638.35  55947293.33      1    934      0    2.82%       1     26
+   8  K   57569638.35  55947293.33      1   1713   2882    2.82%       1     27
+   9  K   57569638.35  55947293.33      1   1101    184    2.82%       1     28
+  10  K   57569638.35  55947293.33      1    687     64    2.82%       1     28
+  11  K   57569638.35  55947293.33      1    441     73    2.82%       1     28
+  12  K   57569638.35  55947293.33      1    273     21    2.82%       1     28
+  13  K   57569638.35  55947293.33      1    175     27    2.82%       1     28
+  14  K   57569638.35  55947293.33      1    108      8    2.82%       1     29
+  15  K   57569638.35  55947293.33      1     67      7    2.82%       1     29
+  16  K   57569638.35  55947293.33      1     49      0    2.82%       1     29
+  17  K   57569638.35  55947293.33      1     49      0    2.82%       1     29
+  18  K   57569638.35  55947293.33      1      6      0    2.82%       1     29
+  19  K   57569638.35  55947293.33      1      0      0    2.82%       1     29
+  20  G   57569638.35  55947293.33      1      0      0    2.82%       1     29
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 29119
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  57569638.35  55947293.33      1      2      1    2.82%       1     38
+*      1  55990060.45  55947293.33      2      1      2    0.08%       0     41
+       2  55990060.45  55947293.33      2      1      2    0.08%       1     41
+       3  55990060.45  55990004.71      2      0      2    0.00%       1     42
+ *** Search completed ***     Time:    42 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.117E+08   .0000000 |  B  6.054E+12 -9.218E+12
+ D  38815557.   .0000000 |  p  3.125E+08   .0000000 |  B  1.396E+10 -8.337E+10
+ D  44233306.   .0000000 |  p  3.124E+08   .0000000 |  B  83927415. -1198271.1
+ D  46600868.   .0000000 |  p  3.124E+08   .0000000 |  B  61703835.  34165937.
+ D  48960210.   .0000000 |  p  3.124E+08   .0000000 |  B  56571268.  48885944.
+ D  50607227.   .0000000 |  p  3.124E+08   .0000000 |  B  55899048.  54043500.
+ D  51656278.   .0000000 |  p  3.124E+08   .0000000 |  B  55743938.  55724714.
+ D  52142061.   .0000000 |  p  3.124E+08   .0000000 |  B  55739777.  55739767.
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38344 simplex iterations, 9.61s
+    Primal: 17425 simplex iterations, 9.67s
+   Barrier: 68 barrier and 40 simplex iterations, 10.42s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    40       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  68 barrier and 40 simplex iterations in 13s
+
+Final objective                         : 5.573977175087481e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         57862655.89  55739771.75      1                  3.67%       0     16
+   1  M   57862655.89  55740108.02      1   4126      0    3.67%       2     18
+   2  K   57862655.89  55759125.04      1   2578     13    3.64%       2     20
+   3  K   57862655.89  55947293.33      1   1552     12    3.31%       2     23
+   4  K   57862655.89  55947293.33      1   1551   1552    3.31%       1     23
+   5  M   57862655.89  55947293.33      1   2042   2777    3.31%       1     23
+   6  K   57862655.89  55947293.33      1   1227      6    3.31%       1     24
+   7  K   57862655.89  55947293.33      1    737      1    3.31%       1     24
+   8  K   57862655.89  55947293.33      1   1688   3114    3.31%       1     25
+   9  K   57862655.89  55947293.33      1   1135    306    3.31%       1     25
+  10  K   57862655.89  55947293.33      1    695     36    3.31%       1     26
+  11  K   57862655.89  55947293.33      1    431     34    3.31%       1     26
+  12  K   57862655.89  55947293.33      1    266     18    3.31%       1     26
+  13  K   57862655.89  55947293.33      1    117     12    3.31%       1     26
+  14  K   57862655.89  55947293.33      1      0      0    3.31%       1     26
+  15  G   57862655.89  55947293.33      1      1      0    3.31%       1     26
+  16  G   57862655.89  55947293.33      1      9   5453    3.31%       1     27
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 4822
+Cut elements in the matrix : 12407
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  57862655.89  55947293.33      1      2      1    3.31%       1     35
+*      1  55990060.45  55947293.33      2      1      2    0.08%       0     37
+       2  55990060.45  55947293.33      2      1      2    0.08%       1     37
+       3  55990060.45  55990004.71      2      0      2    0.00%       1     37
+ *** Search completed ***     Time:    37 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.121E+08   .0000000 |  B  5.850E+12 -9.199E+12
+ D  38815557.   .0000000 |  p  3.128E+08   .0000000 |  B  7.847E+09 -5.956E+10
+ D  44233306.   .0000000 |  p  3.128E+08   .0000000 |  B  90192655.  548533.92
+ D  46600868.   .0000000 |  p  3.128E+08   .0000000 |  B  60023918.  43685638.
+ D  48960210.   .0000000 |  p  3.127E+08   .0000000 |  B  56354177.  51783976.
+ D  50607227.   .0000000 |  p  3.127E+08   .0000000 |  B  55889499.  54413567.
+ D  51656278.   .0000000 |  p  3.127E+08   .0000000 |  B  55745296.  55698567.
+ D  52142061.   .0000000 |  p  3.126E+08   .0000000 |  B  55739789.  55739730.
+ D  52504153.   .0000000 |  p  3.126E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38053 simplex iterations, 8.67s
+    Primal: 12371 simplex iterations, 8.88s
+   Barrier: 71 barrier and 39 simplex iterations, 9.99s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  71 barrier and 39 simplex iterations in 13s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         58135671.94  55739771.75      1                  4.12%       0     16
+   1  M   58135671.94  55740162.57      1   4123      0    4.12%       2     19
+   2  K   58135671.94  55947293.33      1   2579     13    3.76%       2     21
+   3  M   58135671.94  55947293.33      1   3197   4124    3.76%       1     22
+   4  K   58135671.94  55947293.33      1    168     69    3.76%       1     22
+   5  K   58135671.94  55947293.33      1      1      0    3.76%       1     22
+   6  K   58135671.94  55947293.33      1      0      0    3.76%       1     23
+   7  G   58135671.94  55947293.33      1      1      0    3.76%       1     23
+   8  G   58135671.94  55947293.33      1      9   3226    3.76%       1     23
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 2647
+Cut elements in the matrix : 7983
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  58135671.94  55947293.33      1      2      1    3.76%       1     30
+*      1  55990060.45  55947293.33      2      1      2    0.08%       0     32
+       2  55990060.45  55947293.33      2      1      2    0.08%       1     32
+       3  55990060.45  55990004.71      2      0      2    0.00%       1     32
+ *** Search completed ***     Time:    32 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.124E+08   .0000000 |  B  5.641E+12 -9.188E+12
+ D  38815557.   .0000000 |  p  3.132E+08   .0000000 |  B  3.848E+09 -3.671E+10
+ D  44233306.   .0000000 |  p  3.131E+08   .0000000 |  B  92294828. -18161863.
+ D  46600868.   .0000000 |  p  3.131E+08   .0000000 |  B  64446135.  25908520.
+ D  48960210.   .0000000 |  p  3.131E+08   .0000000 |  B  56770357.  48041543.
+ D  50607227.   .0000000 |  p  3.131E+08   .0000000 |  B  55937525.  53565863.
+ D  51656278.   .0000000 |  p  3.131E+08   .0000000 |  B  55755530.  55410398.
+ D  52142061.   .0000000 |  p  3.131E+08   .0000000 |  B  55745030.  55696625.
+ D  52504153.   .0000000 |  p  3.130E+08   .0000000 |  B  55739773.  55739766.
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38379 simplex iterations, 8.86s
+    Primal: 11063 simplex iterations, 9.36s
+   Barrier: 79 barrier and 39 simplex iterations, 10.85s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    14
+Barrier solved problem
+  79 barrier and 39 simplex iterations in 14s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         58359193.90  55739771.75      1                  4.49%       0     17
+   1  M   58359193.90  55740217.02      1   4123      0    4.49%       2     20
+   2  K   58359193.90  55947293.33      1   2579     13    4.13%       2     22
+   3  M   58359193.90  55947293.33      1   3191   4109    4.13%       1     23
+   4  K   58359193.90  55947293.33      1    164     81    4.13%       1     23
+   5  K   58359193.90  55947293.33      1      1      2    4.13%       1     24
+   6  K   58359193.90  55947293.33      1      0      0    4.13%       1     24
+   7  G   58359193.90  55947293.33      1      1      0    4.13%       1     24
+   8  G   58359193.90  55947293.33      1      1   3181    4.13%       1     24
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 2675
+Cut elements in the matrix : 8064
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  58359193.90  55947293.33      1      2      1    4.13%       1     37
+*      1  55990060.45  55947293.33      2      1      2    0.08%       0     39
+       2  55990060.45  55947293.33      2      1      2    0.08%       1     39
+       3  55990060.45  55990004.71      2      0      2    0.00%       1     40
+ *** Search completed ***     Time:    40 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.128E+08   .0000000 |  B  6.525E+12 -9.308E+12
+ D  38815557.   .0000000 |  p  3.136E+08   .0000000 |  B  1.238E+10 -8.343E+10
+ D  44233306.   .0000000 |  p  3.135E+08   .0000000 |  B  95485062. -57889642.
+ D  46600868.   .0000000 |  p  3.135E+08   .0000000 |  B  64110768.  24846652.
+ D  48960210.   .0000000 |  p  3.135E+08   .0000000 |  B  57498797.  42605162.
+ D  50607227.   .0000000 |  p  3.135E+08   .0000000 |  B  56170940.  51707853.
+ D  51656278.   .0000000 |  p  3.135E+08   .0000000 |  B  55843413.  54506076.
+ D  52142061.   .0000000 |  p  3.135E+08   .0000000 |  B  55747948.  55653962.
+ D  52504153.   .0000000 |  p  3.135E+08   .0000000 |  B  55739945.  55739290.
+ D  52827804.   .0000000 |  p  3.135E+08   .0000000 |  B  55739772.  55739772.
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38558 simplex iterations, 8.80s
+    Primal: 13599 simplex iterations, 9.81s
+   Barrier: 85 barrier and 39 simplex iterations, 11.70s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    14
+Barrier solved problem
+  85 barrier and 39 simplex iterations in 14s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         58512087.02  55739771.75      1                  4.74%       0     18
+   1  M   58512087.02  55740271.63      1   4123      0    4.74%       2     21
+   2  K   58512087.02  55947293.33      1   2579     13    4.38%       2     23
+   3  M   58512087.02  55947293.33      1   3195   4119    4.38%       1     24
+   4  K   58512087.02  55947293.33      1    170     81    4.38%       1     24
+   5  K   58512087.02  55947293.33      1      1      3    4.38%       1     25
+   6  K   58512087.02  55947293.33      1      0      0    4.38%       1     25
+   7  G   58512087.02  55947293.33      1      1      0    4.38%       1     25
+   8  G   58512087.02  55947293.33      1      2      4    4.38%       1     25
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 5852
+Cut elements in the matrix : 17589
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  58512087.02  55947293.33      1      2      1    4.38%       1     36
+*      1  55990060.45  55947293.33      2      1      2    0.08%       0     38
+       2  55990060.45  55947293.33      2      1      2    0.08%       1     38
+       3  55990060.45  55990004.71      2      0      2    0.00%       1     38
+ *** Search completed ***     Time:    38 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.132E+08   .0000000 |  B  6.457E+12 -9.269E+12
+ D  38815557.   .0000000 |  p  3.140E+08   .0000000 |  B  1.475E+10 -8.580E+10
+ D  44233306.   .0000000 |  p  2.923E+08   .0000000 |  B  95507145. -16330460.
+ D  46600868.   .0000000 |  p  2.923E+08   .0000000 |  B  61993763.  33999407.
+ D  48960210.   .0000000 |  p  2.923E+08   .0000000 |  B  56744019.  47497615.
+ D  50607227.   .0000000 |  p  2.923E+08   .0000000 |  B  55917191.  53217626.
+ D  51656278.   .0000000 |  p  2.923E+08   .0000000 |  B  55756809.  55651021.
+ D  52142061.   .0000000 |  p  2.923E+08   .0000000 |  B  55739896.  55739427.
+ D  52504153.   .0000000 |  p  2.923E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38778 simplex iterations, 9.14s
+    Primal: 19063 simplex iterations, 9.48s
+   Barrier: 75 barrier and 39 simplex iterations, 10.40s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  75 barrier and 39 simplex iterations in 13s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         58648434.37  55739771.75      1                  4.96%       0     16
+   1  M   58648434.37  55740326.12      1   4123      0    4.96%       2     19
+   2  K   58648434.37  55947293.33      1   2579     13    4.61%       2     21
+   3  M   58648434.37  55947293.33      1   3191   4110    4.61%       1     22
+   4  K   58648434.37  55947293.33      1    190     82    4.61%       1     22
+   5  K   58648434.37  55947293.33      1      3      2    4.61%       1     23
+   6  K   58648434.37  55947293.33      1      0      0    4.61%       1     23
+   7  G   58648434.37  55947293.33      1      1      0    4.61%       1     23
+   8  G   58648434.37  55947293.33      1     10   3237    4.61%       1     23
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 2654
+Cut elements in the matrix : 7983
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  58648434.37  55947293.33      1      2      1    4.61%       1     42
+*      1  55990060.45  55947293.33      2      1      2    0.08%       0     44
+       2  55990060.45  55947293.33      2      1      2    0.08%       1     44
+       3  55990060.45  55990004.71      2      0      2    0.00%       1     45
+ *** Search completed ***     Time:    45 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.144E+08   .0000000 |  B  6.383E+12 -9.243E+12
+ D  38815557.   .0000000 |  p  3.144E+08   .0000000 |  B  1.422E+10 -8.479E+10
+ D  44233306.   .0000000 |  p  3.143E+08   .0000000 |  B  86424212.  10649432.
+ D  46600868.   .0000000 |  p  3.142E+08   .0000000 |  B  62318327.  34490057.
+ D  48960210.   .0000000 |  p  3.142E+08   .0000000 |  B  56520148.  50057108.
+ D  50607227.   .0000000 |  p  3.142E+08   .0000000 |  B  55874223.  54220445.
+ D  51656278.   .0000000 |  p  3.142E+08   .0000000 |  B  55747215.  55677533.
+ D  52142061.   .0000000 |  p  3.141E+08   .0000000 |  B  55739788.  55739694.
+ D  52504153.   .0000000 |  p  3.141E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38511 simplex iterations, 9.19s
+    Primal: 10837 simplex iterations, 9.19s
+   Barrier: 72 barrier and 39 simplex iterations, 9.67s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  72 barrier and 39 simplex iterations in 13s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         58715606.33  55739771.75      1                  5.07%       0     16
+   1  M   58715606.33  55740381.00      1   4123      0    5.07%       2     20
+   2  K   58715606.33  55947293.33      1   2579     13    4.71%       2     22
+   3  M   58715606.33  55947293.33      1   3191   4109    4.71%       1     23
+   4  K   58715606.33  55947293.33      1    164     74    4.71%       1     23
+   5  K   58715606.33  55947293.33      1      1      4    4.71%       1     23
+   6  K   58715606.33  55947293.33      1      0      0    4.71%       1     23
+   7  G   58715606.33  55947293.33      1      1      0    4.71%       1     23
+   8  G   58715606.33  55947293.33      1      4   3182    4.71%       1     23
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 2682
+Cut elements in the matrix : 8083
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  58715606.33  55947293.33      1      2      1    4.71%       1     42
+*      1  55990060.45  55947293.33      2      1      2    0.08%       0     44
+       2  55990060.45  55947293.33      2      1      2    0.08%       1     44
+       3  55990060.45  55990004.71      2      0      2    0.00%       1     45
+ *** Search completed ***     Time:    45 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   4s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.155E+08   .0000000 |  B  6.305E+12 -9.226E+12
+ D  38815557.   .0000000 |  p  3.155E+08   .0000000 |  B  1.557E+10 -8.959E+10
+ D  44233306.   .0000000 |  p  2.931E+08   .0000000 |  B  99715532. -25885762.
+ D  46600868.   .0000000 |  p  2.931E+08   .0000000 |  B  64244219.  26466592.
+ D  48960210.   .0000000 |  p  2.931E+08   .0000000 |  B  56903250.  46016548.
+ D  50607227.   .0000000 |  p  2.931E+08   .0000000 |  B  55939075.  53434109.
+ D  51656278.   .0000000 |  p  2.931E+08   .0000000 |  B  55798984.  55118017.
+ D  52142061.   .0000000 |  p  2.931E+08   .0000000 |  B  55742438.  55694539.
+ D  52504153.   .0000000 |  p  2.930E+08   .0000000 |  B  55739772.  55739769.
+ D  52827804.   .0000000 |  p  2.930E+08   .0000000 |  P  55739772.   .0000000
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38344 simplex iterations, 8.84s
+    Primal: 18323 simplex iterations, 9.52s
+   Barrier: 79 barrier and 39 simplex iterations, 10.71s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  79 barrier and 39 simplex iterations in 13s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         58715606.33  55739771.75      1                  5.07%       0     17
+   1  M   58715606.33  55740436.38      1   4123      0    5.07%       2     20
+   2  K   58715606.33  55947293.33      1   2579     13    4.71%       2     22
+   3  M   58715606.33  55947293.33      1   3191   4110    4.71%       1     23
+   4  K   58715606.33  55947293.33      1    164     80    4.71%       1     23
+   5  K   58715606.33  55947293.33      1      1      2    4.71%       1     23
+   6  K   58715606.33  55947293.33      1      0      0    4.71%       1     23
+   7  G   58715606.33  55947293.33      1      1      0    4.71%       1     24
+   8  G   58715606.33  55947293.33      1      2   3181    4.71%       1     24
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 2676
+Cut elements in the matrix : 8047
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  58715606.33  55947293.33      1      2      1    4.71%       1     40
+*      1  55990060.45  55947293.33      2      1      2    0.08%       0     42
+       2  55990060.45  55947293.33      2      1      2    0.08%       1     42
+       3  55990060.45  55990004.71      2      0      2    0.00%       1     43
+ *** Search completed ***     Time:    43 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.159E+08   .0000000 |  B  6.224E+12 -9.213E+12
+ D  38815557.   .0000000 |  p  3.159E+08   .0000000 |  B  1.426E+10 -8.167E+10
+ D  44233306.   .0000000 |  p  3.150E+08   .0000000 |  B  1.142E+08 -809031.56
+ D  46600868.   .0000000 |  p  3.150E+08   .0000000 |  B  63069450.  41668501.
+ D  48960210.   .0000000 |  p  3.150E+08   .0000000 |  B  56793887.  49737485.
+ D  50607227.   .0000000 |  p  3.150E+08   .0000000 |  B  55944029.  54341396.
+ D  51656278.   .0000000 |  p  3.150E+08   .0000000 |  B  55755278.  55551795.
+ D  52142061.   .0000000 |  p  3.150E+08   .0000000 |  B  55739836.  55739531.
+ D  52504153.   .0000000 |  p  3.150E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38238 simplex iterations, 9.15s
+    Primal: 13040 simplex iterations, 9.15s
+   Barrier: 71 barrier and 40 simplex iterations, 10.49s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    40       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  71 barrier and 40 simplex iterations in 13s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         58715606.33  55739771.75      1                  5.07%       0     17
+   1  M   58715606.33  55740491.77      1   4124      0    5.07%       2     20
+   2  K   58715606.33  55947293.33      1   2579     13    4.71%       2     21
+   3  M   58715606.33  55947293.33      1   3191   4111    4.71%       1     23
+   4  K   58715606.33  55947293.33      1    165     82    4.71%       1     23
+   5  K   58715606.33  55947293.33      1      2     10    4.71%       1     23
+   6  K   58715606.33  55947293.33      1      0      0    4.71%       1     23
+   7  G   58715606.33  55947293.33      1      1      0    4.71%       1     23
+   8  G   58715606.33  55947293.33      1      2   3214    4.71%       1     23
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 2635
+Cut elements in the matrix : 7942
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  58715606.33  55947293.33      1      2      1    4.71%       1     40
+*      1  55990060.45  55947293.33      2      1      2    0.08%       0     41
+       2  55990060.45  55947293.33      2      1      2    0.08%       1     41
+       3  55990060.45  55990004.71      2      0      2    0.00%       1     43
+ *** Search completed ***     Time:    43 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.163E+08   .0000000 |  B  6.139E+12 -9.205E+12
+ D  38815557.   .0000000 |  p  3.163E+08   .0000000 |  B  1.513E+10 -8.376E+10
+ D  44233306.   .0000000 |  p  3.154E+08   .0000000 |  B  80768866.  16307166.
+ D  46600868.   .0000000 |  p  3.154E+08   .0000000 |  B  60816158.  35253671.
+ D  48960210.   .0000000 |  p  3.154E+08   .0000000 |  B  56533822.  49211024.
+ D  50607227.   .0000000 |  p  3.154E+08   .0000000 |  B  55900714.  53420875.
+ D  51656278.   .0000000 |  p  3.154E+08   .0000000 |  B  55747492.  55640870.
+ D  52142061.   .0000000 |  p  3.153E+08   .0000000 |  B  55739856.  55739558.
+ D  52504153.   .0000000 |  p  3.153E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38053 simplex iterations, 9.28s
+    Primal: 10055 simplex iterations, 9.28s
+   Barrier: 72 barrier and 39 simplex iterations, 9.84s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  72 barrier and 39 simplex iterations in 13s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         58715606.33  55739771.75      1                  5.07%       0     17
+   1  M   58715606.33  55740547.15      1   4124      0    5.07%       2     20
+   2  K   58715606.33  55947293.33      1   2579     13    4.71%       2     21
+   3  M   58715606.33  55947293.33      1   3192   4112    4.71%       1     23
+   4  K   58715606.33  55947293.33      1    165     78    4.71%       1     23
+   5  K   58715606.33  55947293.33      1      0      1    4.71%       1     23
+   6  G   58715606.33  55947293.33      1      1      0    4.71%       1     23
+   7  G   58715606.33  55947293.33      1      1   3186    4.71%       1     23
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 2673
+Cut elements in the matrix : 8061
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  58715606.33  55947293.33      1      2      1    4.71%       1     40
+*      1  55990060.45  55947293.33      2      1      2    0.08%       0     42
+       2  55990060.45  55947293.33      2      1      2    0.08%       1     42
+       3  55990060.45  55990004.71      2      0      2    0.00%       1     43
+ *** Search completed ***     Time:    43 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       668854 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     86840 rows        51517 cols       276141 elements         2 globals
+     30388 inds
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   4s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  31446649.   .0000000 |  p  3.075E+08   .0000000 |  B  3.313E+12 -8.043E+12
+ D  38544337.   .0000000 |  p  2.834E+08   .0000000 |  B  4.357E+08 -1.216E+09
+ D  40746171.   .0000000 |  p  2.834E+08   .0000000 |  B  64868090.  30243298.
+ D  45349152.   .0000000 |  p  2.073E+08   .0000000 |  B  56775511.  48074914.
+ D  47821224.   .0000000 |  p  2.059E+08   .0000000 |  B  55925313.  54031208.
+ D  49086861.   .0000000 |  p  2.024E+08   .0000000 |  B  55797635.  55187264.
+ D  50559318.   .0000000 |  p  1.988E+08   .0000000 |  B  55740131.  55738910.
+ D  50877040.   .0000000 |  p  1.905E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 25663 simplex iterations, 6.75s
+    Primal: 9777 simplex iterations, 8.65s
+   Barrier: 70 barrier and 40 simplex iterations, 8.65s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    40       55739771.75      P      0     0        .000000    11
+Barrier solved problem
+  70 barrier and 40 simplex iterations in 11s
+
+Final objective                         : 5.573977175087491e+07
+  Max primal violation      (abs / rel) : 9.948e-13 / 9.430e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         55947290.36  55739771.75      1                  0.37%       0     15
+   1  M   55947290.36  55739771.75      1   1545      0    0.37%       2     17
+   2  K   55947290.36  55739771.75      1   2478   1543    0.37%       2     18
+   3  K   55947290.36  55739771.75      1      1      7    0.37%       2     19
+   4  K   55947290.36  55739771.75      1      1    932    0.37%       2     20
+   5  K   55947290.36  55739771.75      1      0      1    0.37%       2     22
+c         55739771.75  55739771.75      2                  0.00%       0     23
+ *** Search completed ***     Time:    23 Nodes:          1
+Number of integer feasible solutions found is 2
+Best integer solution found is  55739771.75
+Best bound is  55739771.75
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.056E+08   .0000000 |  B  4.372E+12 -9.180E+12
+ D  38815557.   .0000000 |  p  2.506E+08   .0000000 |  B  5.370E+09 -1.316E+10
+ D  44233306.   .0000000 |  p  2.506E+08   .0000000 |  B  90674530.  343076.95
+ D  46600868.   .0000000 |  p  2.506E+08   .0000000 |  B  60845842.  37185168.
+ D  48960210.   .0000000 |  p  2.506E+08   .0000000 |  B  56545630.  49346664.
+ D  50607227.   .0000000 |  p  2.506E+08   .0000000 |  B  55905608.  53869880.
+ D  51656278.   .0000000 |  p  2.506E+08   .0000000 |  B  55748205.  55653736.
+ D  52142061.   .0000000 |  p  2.506E+08   .0000000 |  B  55740438.  55737283.
+ D  52504153.   .0000000 |  p  2.506E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38023 simplex iterations, 8.91s
+    Primal: 8783 simplex iterations, 9.83s
+   Barrier: 75 barrier and 39 simplex iterations, 10.30s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    14
+Barrier solved problem
+  75 barrier and 39 simplex iterations in 14s
+
+Final objective                         : 5.573977175087480e+07
+  Max primal violation      (abs / rel) : 9.379e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56016390.98  55739771.75      1                  0.49%       0     15
+   1  M   56016390.98  55739783.45      1   4123      0    0.49%       2     16
+   2  K   56016390.98  55740659.93      1   4223   4121    0.49%       2     18
+   3  K   56016390.98  55740802.78      1   2541     20    0.49%       2     20
+   4  K   56016390.98  55740888.11      1   1526      3    0.49%       2     22
+   5  K   56016390.98  55740908.72      1    918      6    0.49%       2     24
+   6  K   56016390.98  55740908.72      1    551      0    0.49%       2     26
+   7  K   56016390.98  55740908.72      1    331      0    0.49%       2     27
+   8  K   56016390.98  55740908.72      1    198      0    0.49%       2     29
+   9  K   56016390.98  55740908.72      1    125     16    0.49%       2     31
+  10  K   56016390.98  55740908.72      1     75      0    0.49%       2     33
+  11  K   56016390.98  55740908.72      1     49      1    0.49%       2     35
+  12  K   56016390.98  55740908.72      1     49      1    0.49%       2     37
+  13  K   56016390.98  55740908.72      1     23      3    0.49%       2     39
+  14  K   56016390.98  55740908.72      1      0      0    0.49%       2     41
+  15  G   56016390.98  55740908.72      1      0      0    0.49%       2     41
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 29888
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56016390.98  55740908.72      1      2      1    0.49%       2     62
+*      1  55813123.51  55740908.72      2      2      2    0.13%       0     62
+       2  55813123.51  55774585.13      2      1      2    0.07%       1     62
+       3  55813123.51  55813067.77      2      1      1    0.00%       1     63
+       4  55813123.51  55813067.77      2      1      2    0.00%       1     63
+STOPPING - MIPRELSTOP target reached.
+ *** Search completed ***     Time:    63 Nodes:          4
+Number of integer feasible solutions found is 2
+Best integer solution found is  55813123.51
+Best bound is  55813067.77
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.057E+08   .0000000 |  B  4.534E+12 -9.182E+12
+ D  38815557.   .0000000 |  p  2.507E+08   .0000000 |  B  8.113E+09 -3.376E+10
+ D  44233306.   .0000000 |  p  2.507E+08   .0000000 |  B  72717947.  10777489.
+ D  46600868.   .0000000 |  p  2.507E+08   .0000000 |  B  60152209.  33696855.
+ D  48960210.   .0000000 |  p  2.507E+08   .0000000 |  B  56686314.  46594789.
+ D  50607227.   .0000000 |  p  2.507E+08   .0000000 |  B  55967619.  53735032.
+ D  51656278.   .0000000 |  p  2.507E+08   .0000000 |  B  55750559.  55653323.
+ D  52142061.   .0000000 |  p  2.507E+08   .0000000 |  B  55743357.  55704636.
+ D  52504153.   .0000000 |  p  2.507E+08   .0000000 |  B  55739782.  55739742.
+ D  52827804.   .0000000 |  p  2.496E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38023 simplex iterations, 9.35s
+    Primal: 7992 simplex iterations, 9.36s
+   Barrier: 82 barrier and 40 simplex iterations, 10.84s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    40       55739771.75      P      0     0        .000000    14
+Barrier solved problem
+  82 barrier and 40 simplex iterations in 14s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56085473.04  55739771.75      1                  0.62%       0     15
+   1  M   56085473.04  55739794.83      1   4123      0    0.62%       2     17
+   2  K   56085473.04  55741523.92      1   4223   4121    0.61%       2     19
+   3  K   56085473.04  55741805.73      1   2543     23    0.61%       2     21
+   4  K   56085473.04  55741974.07      1   1526      1    0.61%       2     23
+   5  K   56085473.04  55742014.71      1    919      8    0.61%       2     25
+   6  K   56085473.04  55742014.71      1    552      2    0.61%       2     27
+   7  K   56085473.04  55742014.71      1    331      0    0.61%       2     29
+   8  K   56085473.04  55742014.71      1    201      6    0.61%       2     31
+   9  K   56085473.04  55742014.71      1    121      0    0.61%       2     33
+  10  K   56085473.04  55742014.71      1     73      2    0.61%       2     35
+  11  K   56085473.04  55742014.71      1     49      0    0.61%       2     37
+  12  K   56085473.04  55742014.71      1     49      0    0.61%       2     39
+  13  K   56085473.04  55742014.71      1     14      0    0.61%       2     41
+  14  K   56085473.04  55742014.71      1      0      0    0.61%       2     43
+  15  G   56085473.04  55742014.71      1      0      0    0.61%       2     44
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 29821
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56085473.04  55742014.71      1      2      1    0.61%       2     55
+       2  56085473.04  55742014.71      1      3      2    0.61%       1     55
+*      2  55886475.27  55742014.71      2      3      2    0.26%       0     56
+       3  55886475.27  55886419.53      2      2      2    0.00%       1     56
+STOPPING - MIPRELSTOP target reached.
+ *** Search completed ***     Time:    56 Nodes:          3
+Number of integer feasible solutions found is 2
+Best integer solution found is  55886475.27
+Best bound is  55886419.53
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.058E+08   .0000000 |  B  5.240E+12 -9.214E+12
+ D  38815557.   .0000000 |  p  2.508E+08   .0000000 |  B  4.798E+09 -3.306E+10
+ D  44233306.   .0000000 |  p  2.508E+08   .0000000 |  B  83614999. -10810509.
+ D  46600868.   .0000000 |  p  2.508E+08   .0000000 |  B  61541788.  29714989.
+ D  48960210.   .0000000 |  p  2.508E+08   .0000000 |  B  57035229.  46617366.
+ D  50607227.   .0000000 |  p  2.508E+08   .0000000 |  B  55888567.  53438619.
+ D  51656278.   .0000000 |  p  2.508E+08   .0000000 |  B  55746642.  55649033.
+ D  52142061.   .0000000 |  p  2.508E+08   .0000000 |  B  55740270.  55737113.
+ D  52504153.   .0000000 |  p  2.507E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38165 simplex iterations, 10.02s
+    Primal: 8589 simplex iterations, 10.33s
+   Barrier: 75 barrier and 39 simplex iterations, 11.53s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    15
+Barrier solved problem
+  75 barrier and 39 simplex iterations in 15s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56154287.88  55739771.75      1                  0.74%       0     16
+   1  M   56154287.88  55739806.28      1   4123      0    0.74%       2     18
+   2  K   56154287.88  55742393.55      1   4223   4121    0.73%       2     20
+   3  K   56154287.88  55742815.23      1   2545     30    0.73%       2     22
+   4  K   56154287.88  55743067.12      1   1530      6    0.73%       2     24
+   5  K   56154287.88  55743127.94      1    920      6    0.73%       2     26
+   6  K   56154287.88  55743127.94      1    554      4    0.73%       2     28
+   7  K   56154287.88  55743127.94      1    334      4    0.73%       2     30
+   8  K   56154287.88  55743127.94      1    209     22    0.73%       2     32
+   9  K   56154287.88  55743127.94      1    125      0    0.73%       2     34
+  10  K   56154287.88  55743127.94      1     75      0    0.73%       2     36
+  11  K   56154287.88  55743127.94      1     49      0    0.73%       2     38
+  12  K   56154287.88  55743127.94      1     49      0    0.73%       2     40
+  13  K   56154287.88  55743127.94      1     18      0    0.73%       2     42
+  14  K   56154287.88  55743127.94      1      0      0    0.73%       2     44
+  15  G   56154287.88  55743127.94      1      0      0    0.73%       2     45
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 29103
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56154287.88  55743127.94      1      2      1    0.73%       2     66
+       2  56154287.88  55743127.94      1      3      2    0.73%       1     67
+*      2  55959827.04  55947293.33      2      2      2    0.02%       0     68
+       3  55959827.04  55947293.33      2      2      2    0.02%       1     68
+       4  55959827.04  55947293.33      2      1      3    0.02%       1     70
+       5  55959827.04  55959771.30      2      0      3    0.00%       1     71
+ *** Search completed ***     Time:    71 Nodes:          5
+Number of integer feasible solutions found is 2
+Best integer solution found is  55959827.04
+Best bound is  55959827.04
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.058E+08   .0000000 |  B  4.797E+12 -9.185E+12
+ D  38815557.   .0000000 |  p  2.508E+08   .0000000 |  B  6.106E+09 -1.301E+10
+ D  44233306.   .0000000 |  p  2.508E+08   .0000000 |  B  80238702.  17106414.
+ D  46600868.   .0000000 |  p  2.508E+08   .0000000 |  B  61515923.  39363647.
+ D  48960210.   .0000000 |  p  2.508E+08   .0000000 |  B  57032163.  48729006.
+ D  50607227.   .0000000 |  p  2.508E+08   .0000000 |  B  56019167.  53348153.
+ D  51656278.   .0000000 |  p  2.508E+08   .0000000 |  B  55794134.  55048195.
+ D  52142061.   .0000000 |  p  2.508E+08   .0000000 |  B  55740470.  55731869.
+ D  52504153.   .0000000 |  p  2.497E+08   .0000000 |  B  55739772.  55739772.
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38023 simplex iterations, 9.51s
+    Primal: 8210 simplex iterations, 9.74s
+   Barrier: 76 barrier and 39 simplex iterations, 11.08s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    14
+Barrier solved problem
+  76 barrier and 39 simplex iterations in 14s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56223058.70  55739771.75      1                  0.86%       0     15
+   1  M   56223058.70  55739817.63      1   4123      0    0.86%       2     17
+   2  K   56223058.70  55743255.78      1   4223   4121    0.85%       2     19
+   3  K   56223058.70  55743816.14      1   2545     30    0.85%       2     21
+   4  K   56223058.70  55744150.86      1   1529      4    0.85%       2     24
+   5  K   56223058.70  55744231.68      1    919      3    0.85%       2     25
+   6  K   56223058.70  55744231.68      1    553      5    0.85%       2     27
+   7  K   56223058.70  55744231.68      1    332      1    0.85%       2     29
+   8  K   56223058.70  55744231.68      1    220     52    0.85%       2     32
+   9  K   56223058.70  55744231.68      1    164     79    0.85%       2     34
+  10  K   56223058.70  55744231.68      1    101      6    0.85%       2     36
+  11  K   56223058.70  55744231.68      1     61      3    0.85%       2     38
+  12  K   56223058.70  55744231.68      1     49      0    0.85%       2     40
+  13  K   56223058.70  55744231.68      1     46      0    0.85%       2     42
+  14  K   56223058.70  55744231.68      1      0      0    0.85%       2     44
+  15  G   56223058.70  55744231.68      1      0      0    0.85%       2     44
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 29329
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56223058.70  55744231.68      1      2      1    0.85%       2     58
+       2  56223058.70  55744231.68      1      3      2    0.85%       1     59
+*      2  56033178.80  55947293.33      2      2      2    0.15%       0     60
+       3  56033178.80  55947293.33      2      2      2    0.15%       1     60
+       4  56033178.80  55947293.33      2      1      3    0.15%       1     62
+c      4  55989716.19  56033123.06      3      0      3    0.08%       0     63
+       5  55989716.19  56033123.06      3      0      3    0.08%       1     63
+ *** Search completed ***     Time:    63 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55989716.19
+Best bound is  55989716.19
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.076E+08   .0000000 |  B  4.403E+12 -9.173E+12
+ D  38815557.   .0000000 |  p  3.076E+08   .0000000 |  B  2.203E+09 -1.313E+10
+ D  44233306.   .0000000 |  p  2.890E+08   .0000000 |  B  88852094.  1034248.5
+ D  46600868.   .0000000 |  p  2.890E+08   .0000000 |  B  60133973.  38913049.
+ D  48960210.   .0000000 |  p  2.890E+08   .0000000 |  B  56393200.  51008858.
+ D  50607227.   .0000000 |  p  2.834E+08   .0000000 |  B  55886414.  54685808.
+ D  51656278.   .0000000 |  p  2.499E+08   .0000000 |  B  55740323.  55737315.
+ D  52142061.   .0000000 |  p  2.307E+08   .0000000 |  B  55739772.  55739771.
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38379 simplex iterations, 9.00s
+    Primal: 8799 simplex iterations, 9.00s
+   Barrier: 67 barrier and 39 simplex iterations, 9.96s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    12
+Barrier solved problem
+  67 barrier and 39 simplex iterations in 12s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56291628.55  55739771.75      1                  0.98%       0     14
+   1  M   56291628.55  55739829.05      1   4123      0    0.98%       2     15
+   2  K   56291628.55  55743069.47      1   2579     13    0.97%       2     17
+   3  K   56291628.55  55744060.46      1   1552     10    0.97%       2     19
+   4  K   56291628.55  55744607.01      1    936     12    0.97%       2     21
+   5  K   56291628.55  55744795.43      1    561      0    0.97%       2     23
+   6  K   56291628.55  55744805.86      1    337      1    0.97%       2     25
+   7  K   56291628.55  55744805.86      1    203      0    0.97%       2     27
+   8  K   56291628.55  55744805.86      1    121      0    0.97%       2     30
+   9  K   56291628.55  55744805.86      1     73      0    0.97%       2     32
+  10  K   56291628.55  55744805.86      1     49      0    0.97%       2     34
+  11  K   56291628.55  55744805.86      1     49      0    0.97%       2     36
+  12  K   56291628.55  55744805.86      1     14      0    0.97%       2     38
+  13  K   56291628.55  55744805.86      1      0      0    0.97%       2     40
+  14  G   56291628.55  55744805.86      1      0      0    0.97%       2     41
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 21124
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56291628.55  55744805.86      1      2      1    0.97%       2     51
+*      1  56106530.56  55774564.22      2      1      2    0.59%       0     53
+       2  56106530.56  55774564.22      2      1      2    0.59%       1     53
+E      2  55989907.48  55774564.22      3      1      2    0.38%       0     54
+       3  55989907.48  55947765.71      3      2      2    0.08%       1     55
+       4  55989907.48  55947765.71      3      1      3    0.08%       1     56
+       5  55989907.48  55989851.74      3      0      3    0.00%       1     57
+ *** Search completed ***     Time:    57 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55989907.48
+Best bound is  55989907.48
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   4s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.077E+08   .0000000 |  B  5.598E+12 -9.226E+12
+ D  38815557.   .0000000 |  p  3.076E+08   .0000000 |  B  3.474E+09 -3.247E+10
+ D  44233306.   .0000000 |  p  3.076E+08   .0000000 |  B  98016721. -74075910.
+ D  46600868.   .0000000 |  p  2.289E+08   .0000000 |  B  61167078.  26805053.
+ D  48960210.   .0000000 |  p  1.961E+08   .0000000 |  B  56621914.  46964990.
+ D  50607227.   .0000000 |  p  1.961E+08   .0000000 |  B  55936491.  53056713.
+ D  51656278.   .0000000 |  p  1.886E+08   .0000000 |  B  55772082.  55363945.
+ D  52142061.   .0000000 |  p  1.842E+08   .0000000 |  B  55743809.  55708021.
+ D  52504153.   .0000000 |  p  1.829E+08   .0000000 |  B  55739777.  55739755.
+ D  52827804.   .0000000 |  p  1.829E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38165 simplex iterations, 9.23s
+    Primal: 20974 simplex iterations, 11.17s
+   Barrier: 81 barrier and 39 simplex iterations, 11.28s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    14
+Barrier solved problem
+  81 barrier and 39 simplex iterations in 14s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56360179.07  55739771.75      1                  1.10%       0     15
+   1  M   56360179.07  55739840.44      1   4123      0    1.10%       2     16
+   2  K   56360179.07  55743725.15      1   2579     13    1.09%       2     19
+   3  K   56360179.07  55744913.18      1   1552     11    1.09%       2     21
+   4  K   56360179.07  55745568.40      1    935      8    1.09%       2     23
+   5  K   56360179.07  55745794.29      1    561      0    1.09%       2     25
+   6  K   56360179.07  55745806.79      1    337      3    1.09%       2     27
+   7  K   56360179.07  55745806.79      1    203      0    1.09%       2     29
+   8  K   56360179.07  55745806.79      1    121      0    1.09%       2     31
+   9  K   56360179.07  55745806.79      1     73      0    1.09%       2     34
+  10  K   56360179.07  55745806.79      1     49      0    1.09%       2     36
+  11  K   56360179.07  55745806.79      1     49      0    1.09%       2     38
+  12  K   56360179.07  55745806.79      1     14      0    1.09%       2     40
+  13  K   56360179.07  55745806.79      1      0      0    1.09%       2     42
+  14  G   56360179.07  55745806.79      1      0      0    1.09%       2     42
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 21124
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56360179.07  55745806.79      1      2      1    1.09%       2     51
+*      1  56179882.32  55774585.50      2      1      2    0.72%       0     53
+       2  56179882.32  55774585.50      2      1      2    0.72%       1     53
+E      2  55990029.89  55774585.50      3      1      2    0.38%       0     54
+       3  55990029.89  55947740.94      3      2      2    0.08%       1     55
+       4  55990029.89  55947740.94      3      1      3    0.08%       1     56
+       5  55990029.89  55989974.15      3      0      3    0.00%       1     57
+ *** Search completed ***     Time:    57 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55990029.89
+Best bound is  55990029.89
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.108E+08   .0000000 |  B  5.381E+12 -9.203E+12
+ D  38815557.   .0000000 |  p  3.107E+08   .0000000 |  B  1.026E+10 -3.082E+10
+ D  44233306.   .0000000 |  p  3.107E+08   .0000000 |  B  91720858. -29996029.
+ D  46600868.   .0000000 |  p  3.107E+08   .0000000 |  B  60993581.  35814470.
+ D  48960210.   .0000000 |  p  2.752E+08   .0000000 |  B  56389419.  50204182.
+ D  50607227.   .0000000 |  p  2.459E+08   .0000000 |  B  55896100.  54088159.
+ D  51656278.   .0000000 |  p  2.459E+08   .0000000 |  B  55743904.  55707054.
+ D  52142061.   .0000000 |  p  2.140E+08   .0000000 |  B  55739774.  55739763.
+ D  52504153.   .0000000 |  p  2.140E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38379 simplex iterations, 8.62s
+    Primal: 12850 simplex iterations, 8.86s
+   Barrier: 70 barrier and 39 simplex iterations, 9.90s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  70 barrier and 39 simplex iterations in 13s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56428453.95  55739771.75      1                  1.22%       0     14
+   1  M   56428453.95  55739851.81      1   4125      0    1.22%       2     16
+   2  K   56428453.95  55744379.58      1   2579     13    1.21%       2     18
+   3  K   56428453.95  55745743.68      1   1552     12    1.21%       2     20
+   4  K   56428453.95  55746527.95      1    935      9    1.21%       2     22
+   5  K   56428453.95  55746791.23      1    563      6    1.21%       2     24
+   6  K   56428453.95  55746805.79      1    338      0    1.21%       2     26
+   7  K   56428453.95  55746805.79      1    203      0    1.21%       2     28
+   8  K   56428453.95  55746805.79      1    121      0    1.21%       2     31
+   9  K   56428453.95  55746805.79      1     73      0    1.21%       2     33
+  10  K   56428453.95  55746805.79      1     49      0    1.21%       2     35
+  11  K   56428453.95  55746805.79      1     49      0    1.21%       2     37
+  12  K   56428453.95  55746805.79      1     14      0    1.21%       2     39
+  13  K   56428453.95  55746805.79      1      0      0    1.21%       2     41
+  14  G   56428453.95  55746805.79      1      0      0    1.21%       2     42
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 21124
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56428453.95  55746805.79      1      2      1    1.21%       2     51
+*      1  56253234.08  55774588.89      2      1      2    0.85%       0     53
+       2  56253234.08  55774588.89      2      1      2    0.85%       1     53
+E      2  55990060.45  55774588.89      3      1      2    0.38%       0     55
+       3  55990060.45  55947734.75      3      2      2    0.08%       1     56
+       4  55990060.45  55947734.75      3      1      3    0.08%       1     57
+       5  55990060.45  55990004.71      3      0      3    0.00%       1     58
+ *** Search completed ***     Time:    58 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.109E+08   .0000000 |  B  5.167E+12 -9.190E+12
+ D  38815557.   .0000000 |  p  3.108E+08   .0000000 |  B  2.183E+09 -6.784E+09
+ D  44233306.   .0000000 |  p  2.892E+08   .0000000 |  B  73383938.  11762084.
+ D  46600868.   .0000000 |  p  2.892E+08   .0000000 |  B  58873561.  37773591.
+ D  48960210.   .0000000 |  p  2.892E+08   .0000000 |  B  56332266.  50621210.
+ D  50607227.   .0000000 |  p  2.511E+08   .0000000 |  B  55879988.  54133049.
+ D  51656278.   .0000000 |  p  2.511E+08   .0000000 |  B  55743087.  55717745.
+ D  52142061.   .0000000 |  p  2.482E+08   .0000000 |  B  55739772.  55739771.
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38023 simplex iterations, 8.71s
+    Primal: 22227 simplex iterations, 9.70s
+   Barrier: 69 barrier and 39 simplex iterations, 9.70s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    13
+Barrier solved problem
+  69 barrier and 39 simplex iterations in 13s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56496119.70  55739771.75      1                  1.34%       0     14
+   1  M   56496119.70  55739863.16      1   4123      0    1.34%       2     15
+   2  K   56496119.70  55745032.78      1   2579     13    1.33%       2     17
+   3  K   56496119.70  55746613.71      1   1555     17    1.33%       2     20
+   4  K   56496119.70  55747485.70      1    935      6    1.33%       2     22
+   5  K   56496119.70  55747786.30      1    561      1    1.32%       2     24
+   6  K   56496119.70  55747802.93      1    338      3    1.32%       2     26
+   7  K   56496119.70  55747802.93      1    203      0    1.32%       2     28
+   8  K   56496119.70  55747802.93      1    122      0    1.32%       2     30
+   9  K   56496119.70  55747802.93      1     73      0    1.32%       2     32
+  10  K   56496119.70  55747802.93      1     49      0    1.32%       2     34
+  11  K   56496119.70  55747802.93      1     49      0    1.32%       2     37
+  12  K   56496119.70  55747802.93      1     14      0    1.32%       2     39
+  13  K   56496119.70  55747802.93      1      0      0    1.32%       2     41
+  14  G   56496119.70  55747802.93      1      0      0    1.32%       2     41
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 21124
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56496119.70  55747802.93      1      2      1    1.32%       2     51
+*      1  56326585.84  55774589.95      2      1      2    0.98%       0     52
+       2  56326585.84  55774589.95      2      1      2    0.98%       1     52
+E      2  55990060.45  55774589.95      3      1      2    0.38%       0     54
+       3  55990060.45  55947734.75      3      2      2    0.08%       1     56
+       4  55990060.45  55947734.75      3      1      3    0.08%       1     56
+       5  55990060.45  55990004.71      3      0      3    0.00%       1     57
+ *** Search completed ***     Time:    58 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.109E+08   .0000000 |  B  4.960E+12 -9.182E+12
+ D  38815557.   .0000000 |  p  3.109E+08   .0000000 |  B  5.000E+09 -2.355E+10
+ D  44233306.   .0000000 |  p  3.109E+08   .0000000 |  B  81516375. -1182673.0
+ D  46600868.   .0000000 |  p  3.109E+08   .0000000 |  B  62283697.  29106112.
+ D  48960210.   .0000000 |  p  3.109E+08   .0000000 |  B  56821138.  47126791.
+ D  50607227.   .0000000 |  p  2.458E+08   .0000000 |  B  55958452.  53537478.
+ D  51656278.   .0000000 |  p  2.458E+08   .0000000 |  B  55778994.  55496028.
+ D  52142061.   .0000000 |  p  2.458E+08   .0000000 |  B  55740220.  55737000.
+ D  52504153.   .0000000 |  p  2.277E+08   .0000000 |  B  55739772.  55739772.
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38323 simplex iterations, 9.35s
+    Primal: 22316 simplex iterations, 11.34s
+   Barrier: 76 barrier and 39 simplex iterations, 11.33s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    14
+Barrier solved problem
+  76 barrier and 39 simplex iterations in 14s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56563329.25  55739771.75      1                  1.46%       0     16
+   1  M   56563329.25  55739874.49      1   4123      0    1.46%       2     17
+   2  K   56563329.25  55745684.76      1   2579     13    1.45%       2     20
+   3  K   56563329.25  55747440.03      1   1556     20    1.44%       2     22
+   4  K   56563329.25  55748441.67      1    935      5    1.44%       2     24
+   5  K   56563329.25  55748779.52      1    564      6    1.44%       2     26
+   6  K   56563329.25  55748798.22      1    339      2    1.44%       2     28
+   7  K   56563329.25  55748798.22      1    203      0    1.44%       2     31
+   8  K   56563329.25  55748798.22      1    122      0    1.44%       2     33
+   9  K   56563329.25  55748798.22      1     73      0    1.44%       2     35
+  10  K   56563329.25  55748798.22      1     49      0    1.44%       2     37
+  11  K   56563329.25  55748798.22      1     49      0    1.44%       2     39
+  12  K   56563329.25  55748798.22      1     15      0    1.44%       2     41
+  13  K   56563329.25  55748798.22      1      0      0    1.44%       2     43
+  14  G   56563329.25  55748798.22      1      0      0    1.44%       2     44
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 21124
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56563329.25  55748798.22      1      2      1    1.44%       2     52
+*      1  56399937.60  55774564.48      2      1      2    1.11%       0     54
+       2  56399937.60  55774564.48      2      1      2    1.11%       1     54
+E      2  55990060.45  55774564.48      3      1      2    0.38%       0     55
+       3  55990060.45  55947734.75      3      2      2    0.08%       1     57
+       4  55990060.45  55947734.75      3      1      3    0.08%       1     57
+       5  55990060.45  55990004.71      3      0      3    0.00%       1     59
+ *** Search completed ***     Time:    59 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
+
+Reading Problem 
+Problem Statistics
+           0 (      0 spare) rows
+           0 (      0 spare) structural columns
+           0 (      0 spare) non-zero elements
+Global Statistics
+           0 entities        0 sets        0 set members
+Minimizing MILP 
+Original problem has:
+    262487 rows       140094 cols       677590 elements      8738 globals
+     43684 inds
+Presolved problem has:
+     95622 rows        60232 cols       306619 elements         2 globals
+     30388 inds
+LP relaxation tightened
+Will try to keep branch and bound tree memory usage below 5.5Gb
+Starting concurrent solve with dual, primal and barrier (6 threads)
+
+                           Concurrent-Solve,   5s
+            Dual                      Primal                     Barrier      
+    objective   dual inf       objective   sum inf         p.obj.     d.obj.  
+ D  29745885.   .0000000 |  p  3.110E+08   .0000000 |  B  4.763E+12 -9.177E+12
+ D  38815557.   .0000000 |  p  3.110E+08   .0000000 |  B  3.836E+09 -1.273E+10
+ D  44233306.   .0000000 |  p  3.110E+08   .0000000 |  B  72812275.  22342237.
+ D  46600868.   .0000000 |  p  2.894E+08   .0000000 |  B  61058496.  38896396.
+ D  48960210.   .0000000 |  p  2.894E+08   .0000000 |  B  56374172.  50995887.
+ D  50607227.   .0000000 |  p  2.894E+08   .0000000 |  B  55911270.  54393327.
+ D  51656278.   .0000000 |  p  2.837E+08   .0000000 |  B  55746215.  55652939.
+ D  52142061.   .0000000 |  p  2.834E+08   .0000000 |  B  55739851.  55739062.
+ D  52504153.   .0000000 |  p  2.502E+08   .0000000 |           crossover     
+----- interrupted ------ | ----- interrupted ------ | ------- optimal --------
+Concurrent statistics:
+      Dual: 38379 simplex iterations, 9.98s
+    Primal: 23361 simplex iterations, 11.40s
+   Barrier: 75 barrier and 39 simplex iterations, 11.40s
+            Barrier used 6 threads 4 cores, L1\L2 cache: 32K\6144K
+            Barrier used AVX support
+Optimal solution found
+
+   Its         Obj Value      S   Ninf  Nneg        Sum Inf  Time
+    39       55739771.75      P      0     0        .000000    15
+Barrier solved problem
+  75 barrier and 39 simplex iterations in 15s
+
+Final objective                         : 5.573977175087488e+07
+  Max primal violation      (abs / rel) : 9.095e-13 / 9.095e-13
+  Max dual violation        (abs / rel) :       0.0 /       0.0
+  Max complementarity viol. (abs / rel) :       0.0 /       0.0
+All values within tolerances
+
+Starting root cutting & heuristics
+
+ Its Type    BestSoln    BestBound   Sols    Add    Del     Gap     GInf   Time
+c         56630106.69  55739771.75      1                  1.57%       0     16
+   1  M   56630106.69  55739885.80      1   4122      0    1.57%       2     18
+   2  K   56630106.69  55746335.55      1   2580     13    1.56%       2     20
+   3  K   56630106.69  55748313.26      1   1555     17    1.56%       2     22
+   4  K   56630106.69  55749395.88      1    935      6    1.56%       2     24
+   5  K   56630106.69  55749770.91      1    562      3    1.55%       2     26
+   6  K   56630106.69  55749791.66      1    337      0    1.55%       2     28
+   7  K   56630106.69  55749791.66      1    203      0    1.55%       2     30
+   8  K   56630106.69  55749791.66      1    121      0    1.55%       2     32
+   9  K   56630106.69  55749791.66      1     73      0    1.55%       2     34
+  10  K   56630106.69  55749791.66      1     49      0    1.55%       2     37
+  11  K   56630106.69  55749791.66      1     49      0    1.55%       2     39
+  12  K   56630106.69  55749791.66      1     14      0    1.55%       2     41
+  13  K   56630106.69  55749791.66      1      0      0    1.55%       2     43
+  14  G   56630106.69  55749791.66      1      0      0    1.55%       2     43
+Heuristic search started
+Heuristic search stopped
+
+Cuts in the matrix         : 10561
+Cut elements in the matrix : 21124
+Will try to keep branch and bound tree memory usage below 5.5Gb
+
+Starting tree search.
+Deterministic mode with up to 8 running threads and up to 16 tasks.
+
+    Node     BestSoln    BestBound   Sols Active  Depth     Gap     GInf   Time
+       1  56630106.69  55749791.66      1      2      1    1.55%       2     55
+*      1  56473289.37  55774588.73      2      1      2    1.24%       0     57
+       2  56473289.37  55774588.73      2      1      2    1.24%       1     57
+E      2  55990060.45  55774588.73      3      1      2    0.38%       0     59
+       3  55990060.45  55947734.75      3      2      2    0.08%       1     60
+       4  55990060.45  55947734.75      3      1      3    0.08%       1     61
+       5  55990060.45  55990004.71      3      0      3    0.00%       1     62
+ *** Search completed ***     Time:    62 Nodes:          5
+Number of integer feasible solutions found is 3
+Best integer solution found is  55990060.45
+Best bound is  55990060.45
+Uncrunching matrix
